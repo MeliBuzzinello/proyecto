@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className="navbar bg-teal-400 shadow-lg">
+        <div className="navbar bg-tiffanyblue shadow-lg">
           <div className="flex-1">
             <Link href={"/"}>
               <Image alt="Logo" src={logo} width={200} height="auto" />
@@ -44,28 +44,15 @@ const Header = () => {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className={`${path === link.href ? 'font-bold': ''} text-base text-slate-100 p-3`}
+                  className={`${path === link.href ? 'font-bold': ''} text-base text-text p-3`}
                 >
                   {link.label}
                 </Link>
               );
             })}
           </nav>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
           <div className="flex-none">
             <div className="dropdown dropdown-end">
-           
-
               <label tabIndex={0} className="btn btn-ghost btn-circle">
                 <div className="indicator">
                   <svg
@@ -85,7 +72,6 @@ const Header = () => {
                   {/* <span className="badge badge-sm indicator-item">9</span> */}
                 </div>
               </label>
-
               <div
                 tabIndex={0}
                 className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"

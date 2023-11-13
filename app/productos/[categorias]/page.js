@@ -18,7 +18,7 @@ const Productos = ({ params }) => {
     return (
         <div className="container m-auto pt-8">
             <h2 className="text-4xl text-bold"></h2>
-            <hr/>
+            
             
             <section className="flex justify-center items-center gap-10 flex-wrap">
                 { items.map(product => <ProductCard key={product.slug} item={product}/>) }
