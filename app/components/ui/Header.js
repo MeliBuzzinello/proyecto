@@ -16,7 +16,7 @@ const links = [
   },
   {
     label: "Productos",
-    href: "/productos",
+    href: "/productos/all",
   },
   {
     label: "Contacto",

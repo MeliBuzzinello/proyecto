@@ -1,11 +1,11 @@
-const mockData = [
+export const mockData = [
     {
       title: "Rosquilla Clásica",
       description: "Deliciosa rosquilla clásica",
       inStock: 10,
       price: 250,
       slug: "rosquilla-clasica",
-      image: "url-imagen-rosquilla",
+      image: "imagen-rosquilla.png",
       type: "donut",
     },
     {
@@ -14,7 +14,7 @@ const mockData = [
       inStock: 15,
       price: 350,
       slug: "cafe-de-caramelo",
-      image: "url-imagen-cafe",
+      image: "imagen-cafe-caramelo.png",
       type: "coffee",
     },
     {
@@ -23,7 +23,7 @@ const mockData = [
       inStock: 20,
       price: 180,
       slug: "galleta-con-trozos-de-chocolate",
-      image: "url-imagen-galleta",
+      image: "galleta-con-trozos-de-chocolate.png",
       type: "cookie",
     },
     {
@@ -32,7 +32,7 @@ const mockData = [
       inStock: 12,
       price: 270,
       slug: "rosquilla-glaseada",
-      image: "url-imagen-rosquilla-glaseada",
+      image: "imagen-rosquilla-glaseada.png",
       type: "donut",
     },
     {
@@ -41,7 +41,7 @@ const mockData = [
       inStock: 18,
       price: 400,
       slug: "cafe-mocha",
-      image: "url-imagen-cafe-mocha",
+      image: "imagen-cafe-mocha.png",
       type: "coffee",
     },
     {
@@ -50,7 +50,7 @@ const mockData = [
       inStock: 22,
       price: 200,
       slug: "galleta-de-avena-con-pasas",
-      image: "url-imagen-galleta-de-avena",
+      image: "imagen-galleta-de-avena.png",
       type: "cookie",
     },
     {
@@ -59,7 +59,7 @@ const mockData = [
       inStock: 8,
       price: 300,
       slug: "rosquilla-rellena-de-jalea",
-      image: "url-imagen-rosquilla-jalea",
+      image: "imagen-rosquilla-jalea.png",
       type: "donut",
     },
     {
@@ -68,7 +68,7 @@ const mockData = [
       inStock: 25,
       price: 280,
       slug: "espresso",
-      image: "url-imagen-espresso",
+      image: "imagen-espresso.png",
       type: "coffee",
     },
     {
@@ -77,7 +77,7 @@ const mockData = [
       inStock: 17,
       price: 220,
       slug: "galleta-de-crema-de-cacahuate",
-      image: "url-imagen-galleta-de-crema-de-cacahuate",
+      image: "imagen-galleta-de-cacahuate.png",
       type: "cookie",
     },
     {
@@ -86,7 +86,7 @@ const mockData = [
       inStock: 14,
       price: 290,
       slug: "rosquilla-con-chispas",
-      image: "url-imagen-rosquilla-chispas",
+      image: "imagen-rosquilla-chispas.png",
       type: "donut",
     },
     {
@@ -95,7 +95,7 @@ const mockData = [
       inStock: 21,
       price: 370,
       slug: "cappuccino",
-      image: "url-imagen-cappuccino",
+      image: "imagen-cappuccino.png",
       type: "coffee",
     },
     {
@@ -104,7 +104,7 @@ const mockData = [
       inStock: 19,
       price: 250,
       slug: "galleta-doble-chocolate",
-      image: "url-imagen-galleta-doble-chocolate",
+      image: "imagen-galleta-doble-chocolate.png",
       type: "cookie",
     },
     {
@@ -113,7 +113,7 @@ const mockData = [
       inStock: 11,
       price: 320,
       slug: "rosquilla-de-glaseado-de-arce",
-      image: "url-imagen-rosquilla-arce",
+      image: "imagen-rosquilla-arce.png",
       type: "donut",
     },
     {
@@ -122,7 +122,7 @@ const mockData = [
       inStock: 16,
       price: 420,
       slug: "cafe-de-avellana",
-      image: "url-imagen-cafe-avellana",
+      image: "imagen-cafe-avellana.png",
       type: "coffee",
     },
     {
@@ -131,7 +131,7 @@ const mockData = [
       inStock: 23,
       price: 230,
       slug: "galleta-snickerdoodle",
-      image: "url-imagen-galleta-snickerdoodle",
+      image: "imagen-galleta-snickerdoodle.png",
       type: "cookie",
     },
     {
@@ -140,7 +140,7 @@ const mockData = [
         inStock: 9,
         price: 330,
         slug: "rosquilla-rellena-de-frambuesa",
-        image: "url-imagen-rosquilla-frambuesa",
+        image: "imagen-rosquilla-frambuesa.png",
         type: "donut",
       },
       {
@@ -149,7 +149,7 @@ const mockData = [
         inStock: 14,
         price: 450,
         slug: "latte-de-vainilla",
-        image: "url-imagen-latte-de-vainilla",
+        image: "imagen-latte-de-vainilla.png",
         type: "coffee",
       },
       {
@@ -158,7 +158,7 @@ const mockData = [
         inStock: 18,
         price: 240,
         slug: "galleta-de-especia-de-calabaza",
-        image: "url-imagen-galleta-de-especia-de-calabaza",
+        image: "imagen-galleta-de-calabaza.png",
         type: "cookie",
       },
       {
@@ -167,7 +167,7 @@ const mockData = [
         inStock: 13,
         price: 310,
         slug: "rosquilla-de-glaseado-de-arandano",
-        image: "url-imagen-rosquilla-arandano",
+        image: "imagen-rosquilla-arandano.png",
         type: "donut",
       },
       {
@@ -176,7 +176,7 @@ const mockData = [
         inStock: 20,
         price: 470,
         slug: "caramel-macchiato",
-        image: "url-imagen-caramel-macchiato",
+        image: "imagen-caramel-macchiato.png",
         type: "coffee",
       },
       {
@@ -185,7 +185,7 @@ const mockData = [
         inStock: 15,
         price: 260,
         slug: "galleta-almond-joy",
-        image: "url-imagen-galleta-almond-joy",
+        image: "imagen-galleta-almond-joy.png",
         type: "cookie",
       },
       {
@@ -194,7 +194,7 @@ const mockData = [
         inStock: 11,
         price: 340,
         slug: "rosquilla-de-sidra-de-manzana",
-        image: "url-imagen-rosquilla-sidra",
+        image: "imagen-rosquilla-sidra.png",
         type: "donut",
       },
       {
@@ -203,7 +203,7 @@ const mockData = [
         inStock: 17,
         price: 430,
         slug: "cafe-de-crema-irlandesa",
-        image: "url-imagen-cafe-crema-irlandesa",
+        image: "imagen-cafe-crema-irlandesa.png",
         type: "coffee",
       },
       {
@@ -212,7 +212,7 @@ const mockData = [
         inStock: 22,
         price: 280,
         slug: "galleta-red-velvet",
-        image: "url-imagen-galleta-red-velvet",
+        image: "imagen-galleta-red-velvet.png",
         type: "cookie",
       },
       {
@@ -221,7 +221,7 @@ const mockData = [
         inStock: 10,
         price: 300,
         slug: "rosquilla-de-crema-de-coco",
-        image: "url-imagen-rosquilla-crema-de-coco",
+        image: "imagen-rosquilla-crema-de-coco.png",
         type: "donut",
       },
       {
@@ -230,7 +230,7 @@ const mockData = [
         inStock: 16,
         price: 420,
         slug: "cafe-de-canela-dolce",
-        image: "url-imagen-cafe-canela-dolce",
+        image: "imagen-cafe-canela-dolce.png",
         type: "coffee",
       },
       {
@@ -239,7 +239,7 @@ const mockData = [
         inStock: 19,
         price: 220,
         slug: "galleta-de-limon-con-semillas-de-amapola",
-        image: "url-imagen-galleta-limon-semillas-amapola",
+        image: "imagen-galleta-limon-semillas-amapola.png",
         type: "cookie",
       },
       {
@@ -248,7 +248,7 @@ const mockData = [
         inStock: 12,
         price: 320,
         slug: "rosquilla-de-glaseado-de-fresa",
-        image: "url-imagen-rosquilla-glaseado-fresa",
+        image: "imagen-rosquilla-glaseado-fresa.png",
         type: "donut",
       },
       {
@@ -257,7 +257,7 @@ const mockData = [
         inStock: 14,
         price: 400,
         slug: "cafe-de-avellana-y-brownie",
-        image: "url-imagen-cafe-avellana-brownie",
+        image: "imagen-cafe-avellana-brownie.png",
         type: "coffee",
       },
       {
@@ -266,7 +266,7 @@ const mockData = [
         inStock: 21,
         price: 290,
         slug: "galleta-de-chocolate-blanco-y-macadamia",
-        image: "url-imagen-galleta-chocolate-blanco-macadamia",
+        image: "imagen-galleta-chocolate-blanco-macadamia.png",
         type: "cookie",
       },
   ];
