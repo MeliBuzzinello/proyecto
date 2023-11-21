@@ -15,13 +15,13 @@ const ProductCard = ({ item }) => {
         />
       </div>
       <div className="p-3">
-        <p className="block mb-1">{item.title}</p>
+        <p className="block mb-1  text-gray-600">{item.title}</p>
         <p className="text-xs tracking-tighter text-gray-600">
           {item.description}
         </p>
       </div>
       <div className="flex justify-between items-center p-2">
-        <p className="text-xl font-bold text-gray-800">${item.price}</p>
+        <p className="text-xl font-bold text-gray-600">${item.price}</p>
         <div className="flex">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle">

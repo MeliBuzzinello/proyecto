@@ -7,8 +7,8 @@ const Detail = ({params}) => {
     const product = mockData.find(item => item.slug === id);
 
     return (
-        <div className="container m-auto pt-8">
-            <h2 className="text-4xl text-bold">Detalle de producto</h2>
+        <div className="container m-auto">
+            {/* <h2 className="text-4xl text-bold">Detalle de producto</h2> */}
             <hr/>
             <ProductDetail key={product.slug} item={product}/>
             {/* { categoria } */}

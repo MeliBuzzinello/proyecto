@@ -77,17 +77,17 @@ const Header = () => {
                 className="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
               >
                 <div className="card-body">
-                  <span className="font-bold text-lg">8 Items</span>
-                  <span className="text-info">Subtotal: $999</span>
+                  <span className="font-bold text-lg text-tiffanyblue">8 Productos</span>
+                  <span className="text-hotpink">Subtotal: $999</span>
                   <div className="card-actions">
                     <button className="btn btn-primary btn-block">
-                      View cart
+                      Ver compra
                     </button>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="dropdown dropdown-end">
+            {/* <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
                   <Image alt="avatar" src={avatar} width={200} height="auto" />
@@ -110,7 +110,7 @@ const Header = () => {
                   <a>Logout</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>

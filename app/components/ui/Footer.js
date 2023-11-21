@@ -14,7 +14,7 @@ const Footer = () => {
           </p>
         </aside>
         <nav>
-          <header className="footer-title">Social</header>
+          <header className="footer-title">Seguinos</header>
           <div className="grid grid-flow-col gap-4">
             <a>
               <svg
