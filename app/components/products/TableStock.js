@@ -4,11 +4,11 @@ const TableStock = ({ item }) => {
   return (
     <>
       <tr>
-        <th>
+        {/* <th>
           <label>
             <input type="checkbox" className="checkbox" />
           </label>
-        </th>
+        </th> */}
         <td>
           <div className="flex items-center gap-3">
             <div className="avatar">
