@@ -32,6 +32,7 @@ const StockAdmin = () => {
           </table>
         </div>
       </section>
+     
     </>
   );
 };

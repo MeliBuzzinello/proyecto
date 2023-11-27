@@ -1,6 +1,5 @@
 import Image from "next/image";
 import fondo from "../public/imgs/fondo.png";
-import TableStock from "./components/products/TableStock";
 
 export const generateMetadata = async () => {
   return {

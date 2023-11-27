@@ -27,12 +27,16 @@ const TableStock = ({ item }) => {
             </div>
           </div>
         </td>
-        <td>{item.price}</td>
+        <td>${item.price}</td>
         <td>{item.inStock}</td>
         <th>
-          <button className="btn btn-ghost btn-xs">Modificar</button>
+          <button className="btn btn-ghost btn-xs">Editar</button>
+        </th>
+        <th>
+          <button className="btn btn-ghost btn-xs">Eliminar</button>
         </th>
       </tr>
+    
     </>
   );
 };
