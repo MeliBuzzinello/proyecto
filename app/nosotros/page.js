@@ -49,7 +49,7 @@ const Nosotros = () => {
         </div>
       </div>
 
-      <section className="grid grid-cols-1 m-8 p-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 min-w-[20%] bg-white rounded-lg">
+      <section className="grid grid-cols-1 m-24 p-8 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 min-w-[20%] bg-white rounded-lg">
         <div className="relative w-full max-w-[800px] mx-auto my-auto">
           <Image
             alt="nosotros"
