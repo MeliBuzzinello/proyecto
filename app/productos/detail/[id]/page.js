@@ -1,10 +1,25 @@
 import ProductDetail from "@/app/components/products/ProductDetail";
-import { mockData } from "@/data/products"
 
-const Detail = ({params}) => {
+const getProducts = async () => {
+    const response = await fetch('http://localhost:3000/api/productos')
+
+    if (!response.ok) {
+        throw new Error("Falló petición de productos")
+    }
+
+    return response.json()
+}
+
+
+
+
+const Detail = async  ({params}) => {
+
+    const data = await getProducts()
+
     const { id } = params
     const { categoria } = params
-    const product = mockData.find(item => item.slug === id);
+    const product = data.find(item => item.slug === id);
 
     return (
         <div className="container m-auto">
@@ -18,4 +33,3 @@ const Detail = ({params}) => {
 
 export default Detail;
 
-{/* <ProductDetail key={product.slug} item={product}/> */}
