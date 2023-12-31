@@ -7,31 +7,16 @@ export const generateMetadata = async ({ params }) => {
 };
 
 
-
-const getProducts = async () => {
-  const response = await fetch('http://localhost:3000/api/productos')
-
-  if (!response.ok) {
-      throw new Error("Falló petición de productos")
-  }
-
-  return response.json()
-}
-
-
-
-
 const Productos = async ({ params }) => {
+  const { categorias  } = params;
+
+  const items = await fetch(`http://localhost:3000/api/productos/${categorias}`, {
+        cache: 'force-cache',
+        next: {
+          tags :['all']
+        }
+    }).then(r => r.json())
   
-    const data = await getProducts()
-    console.log(`data ${data}`)
-
-  const { categorias } = params;
-
-  const items =
-    categorias === "all"
-      ? data
-      : data.filter((product) => product.type === categorias);
 
   return (
     <div className="container m-auto pt-8">

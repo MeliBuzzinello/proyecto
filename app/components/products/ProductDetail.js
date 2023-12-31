@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ProductDetail = ({ item }) => {
+
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
