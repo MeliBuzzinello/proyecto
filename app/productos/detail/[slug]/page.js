@@ -20,7 +20,7 @@ const Detail = async  ({params}) => {
         <div className="container m-auto">
             <hr/>
             <Suspense fallback={<div>cargando</div>}>
-            <ProductDetail key={item.slug} item={item}/>
+            <ProductDetail key={data.slug} item={data}/>
             </Suspense>
         </div>
     )

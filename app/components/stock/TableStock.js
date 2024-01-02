@@ -13,12 +13,12 @@ const TableStock = ({ item }) => {
           <div className="flex items-center gap-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
-                <Image
+                {/* <Image
                   alt={item.title}
-                  src={`/imgs/products/${item.image}`}
+                  src={item.image}
                   width={400}
                   height={400}
-                />
+                /> */}
               </div>
             </div>
             <div>
@@ -27,8 +27,8 @@ const TableStock = ({ item }) => {
             </div>
           </div>
         </td>
-        <td>${item.price}</td>
-        <td>{item.inStock}</td>
+        <td >${item.price}</td>
+        <td >{item.inStock}</td>
         <th>
           <button className="btn btn-ghost btn-xs">Editar</button>
         </th>

@@ -1,8 +1,19 @@
 'use client'
+import { useCartContext } from "@/app/context/cartContext";
 import Image from "next/image";
 import { useState } from "react";
 
 const ProductDetail = ({ item }) => {
+  console.log(item)
+
+  const { addToCart, isInCart } = useCartContext()
+
+  const handleAdd = () => {
+      addToCart({
+          ...item,
+          count
+      })
+  }
 
   const [count, setCount] = useState(0);
   const increment = () => {
@@ -41,7 +52,7 @@ const ProductDetail = ({ item }) => {
           <button onClick={increment} className="w-8 h-8 rounded-full bg-gray-500 text-white transition-colors duration-300 ease-in-out hover:bg-gray-600 active:bg-gray-900">+</button>
         </div>
         <div className="flex">
-          <button className="btn btn-primary">Agregar al carrito</button>
+          <button className="btn btn-primary"  onClick={handleAdd}>Agregar al carrito</button>
         </div>
       </div>
     </section>

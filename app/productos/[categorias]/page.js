@@ -7,6 +7,16 @@ export const generateMetadata = async ({ params }) => {
 };
 
 
+export function generateStaticParams() {
+  return [
+    { categorias: 'all'},
+    { categorias: 'coffee'},
+    { categorias: 'donut'},
+    { categorias: 'cookie'}
+  ]
+};
+export const revalidate = 3600;
+
 const Productos = async ({ params }) => {
   const { categorias  } = params;
 
