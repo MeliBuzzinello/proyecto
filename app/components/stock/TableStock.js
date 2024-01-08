@@ -17,23 +17,23 @@ const TableStock = ({ item }) => {
                   alt={item.title}
                   src={item.image}
                   width={400}
-                  height={400}
+                  height={400} 
                 /> */}
-              </div>
+              </div> 
             </div>
             <div>
-              <div className="font-bold">{item.title}</div>
-              <div className="text-sm opacity-50">{item.description}</div>
+              <div className="font-bold text-gray-500">{item.title}</div>
+              <div className="text-sm opacity-50 text-gray-500">{item.description}</div>
             </div>
           </div>
         </td>
-        <td >${item.price}</td>
-        <td >{item.inStock}</td>
+        <td className="text-gray-500">${item.price}</td>
+        <td className="text-gray-500">{item.inStock}</td>
         <th>
-          <button className="btn btn-ghost btn-xs">Editar</button>
+          <button className="btn btn-ghost btn-xs text-gray-500">Editar</button>
         </th>
         <th>
-          <button className="btn btn-ghost btn-xs">Eliminar</button>
+          <button className="btn btn-ghost btn-xs text-gray-500">Eliminar</button>
         </th>
       </tr>
     

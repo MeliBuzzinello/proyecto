@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { mockData } from "../../data/products";
 import TableStock from "../components/stock/TableStock";
 
@@ -13,7 +14,10 @@ console.log(items)
     <>
       <section className="grid grid-cols-1 m-14 p-8 gap-5 min-w-[20%] bg-white rounded-lg">
         <div className="flex justify-end">
-          <button className="btn btn-primary">+ Producto</button>
+          <Link
+          href={'/stock/alta'}
+          ><button className="btn btn-primary">+ Producto</button></Link>
+          
         </div>
         
         <div className="overflow-x-auto">
