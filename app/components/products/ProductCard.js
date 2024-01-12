@@ -8,7 +8,7 @@ const ProductCard = ({ item }) => {
       <div className="flex justify-center items-center leading-none">
         <Image
           alt={item.title}
-          src={`/imgs/products/${item.image}`}
+          src={item.image}
           width={400}
           height={400}
           className="h-56 w-72 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"

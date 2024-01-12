@@ -7,8 +7,7 @@ const StockAdmin = async () => {
   cache: 'no-store',
  }).then( r => r.json() )
 
-console.log('stockadmin')
-console.log(items)
+
 
   return (
     <>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ProductDetail = ({ item }) => {
-  console.log(item)
 
   const { addToCart, isInCart } = useCartContext()
 
@@ -13,6 +12,8 @@ const ProductDetail = ({ item }) => {
           ...item,
           count
       })
+
+      
   }
 
   const [count, setCount] = useState(0);
@@ -31,7 +32,7 @@ const ProductDetail = ({ item }) => {
       <div className="rounded-t-6 m-5">
         <Image
           alt={item.description}
-          src={`/imgs/products/${item.image}`}
+          src={item.image}
           width={400}
           height={400}
           className="rounded-md shadow-2xl"

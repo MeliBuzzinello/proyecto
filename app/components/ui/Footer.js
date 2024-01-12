@@ -4,7 +4,7 @@ import logo from "../../../public/imgs/Logosinfondo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-10 bg-neutral text-neutral-content">
+      <footer className="footer p-10 bg-neutral text-neutral-content relative mt-auto">
         <aside>
           <Image alt="Logo" src={logo} width={100} height={25} />
           <p>

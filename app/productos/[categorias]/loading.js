@@ -7,9 +7,9 @@ const Loading = () => {
             <Image
                 src={'/donaLayout.png'}
                 alt="Logo Dona"
-                width={350}
-                height={350}
-                className="animate-pulse"
+                width={150}
+                height={150}
+                className="animate-spin"
             />
         </div>
     )

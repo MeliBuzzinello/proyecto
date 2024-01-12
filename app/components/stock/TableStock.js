@@ -13,12 +13,12 @@ const TableStock = ({ item }) => {
           <div className="flex items-center gap-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
-                {/* <Image
+                <Image
                   alt={item.title}
                   src={item.image}
                   width={400}
                   height={400} 
-                /> */}
+                /> 
               </div> 
             </div>
             <div>

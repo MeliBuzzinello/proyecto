@@ -21,7 +21,7 @@ const Productos = async ({ params }) => {
   const { categorias  } = params;
 
   const items = await fetch(`http://localhost:3000/api/productos/${categorias}`, {
-        cache: 'force-cache',
+        cache: 'no-store',
         next: {
           tags :['all']
         }
